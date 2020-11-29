@@ -81,5 +81,4 @@
         Console.WriteLine(My.Resources.HelpText)
         End
     End Sub
-
 End Module
