@@ -9,6 +9,7 @@
             Dim process_path As String = Nothing
             Dim process_args As String = Nothing
             Dim process_windowstyle As ProcessWindowStyle = ProcessWindowStyle.Normal
+            Dim process_workingdirectory As String = Nothing
 
             'If no arguments are specified, print help text
             If s.Length = 1 Then PrintHelpTextAndEnd()
@@ -36,6 +37,9 @@
                                 'If something other than the above choices is specified, print help text
                                 PrintHelpTextAndEnd()
                         End Select
+                    Case "-workingdirectory"
+                        'Store the working directory (if provided)
+                        process_workingdirectory = s(i + 1)
                 End Select
             Next
 
@@ -50,6 +54,9 @@
             p.StartInfo.FileName = process_path
             p.StartInfo.Arguments = process_args
             p.StartInfo.WindowStyle = process_windowstyle
+            If process_workingdirectory <> "" Then
+                p.StartInfo.WorkingDirectory = process_workingdirectory
+            End If
             p.Start()
 
             'Wait half a second

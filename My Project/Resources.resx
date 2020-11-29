@@ -118,8 +118,8 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="HelpText" xml:space="preserve">
-    <value>SpawnProcess.exe -path "C:\Path\To\Process.exe" -args "-arg1 goesHere -arg2 goesHere" -windowstyle hidden|normal|minimized|maximized
+    <value>SpawnProcess.exe -path "C:\Path\To\Process.exe" -args "-arg1 goesHere -arg2 goesHere" -windowstyle hidden|normal|minimized|maximized -workingdirectory "C:\Path\To"
 
--args and -windowstyle are optional</value>
+-args and -windowstyle and -workingdirectory are optional</value>
   </data>
 </root>
