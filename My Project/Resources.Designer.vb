@@ -61,9 +61,9 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Looks up a localized string similar to SpawnProcess.exe -path &quot;C:\Path\To\Process.exe&quot; -args &quot;-arg1 goesHere -arg2 goesHere&quot; -windowstyle hidden|normal|minimized|maximized
+        '''  Looks up a localized string similar to SpawnProcess.exe -path &quot;C:\Path\To\Process.exe&quot; -args &quot;-arg1 goesHere -arg2 goesHere&quot; -windowstyle hidden|normal|minimized|maximized -workingdirectory &quot;C:\Path\To&quot;
         '''
-        '''-args and -windowstyle are optional.
+        '''-args and -windowstyle and -workingdirectory are optional.
         '''</summary>
         Friend ReadOnly Property HelpText() As String
             Get
