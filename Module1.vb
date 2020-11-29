@@ -61,7 +61,7 @@
             j.Stop()
 
             'Report process ID
-            Console.WriteLine("Spawned process: " + x.Id.ToString)
+            Console.WriteLine("Spawned process: " + p.Id.ToString)
             End
         Catch ex As Exception
             'On error, print the error message
