@@ -15,7 +15,7 @@ Quick and simple application that spawns a new process without blocking executio
 |Argument|Required/Optional|Description|
 |--|--|--|
 |-path|Required|Path to Process|
-|-args|Optional|Arguments for Process|
+|-args|Optional|Arguments for Process (args must be in double-quotes)|
 |-windowstyle|Optional|Hidden/Normal/Minimized/Maximized|
 |-workingdirectory|Optional|Working Directory of Process|
 
