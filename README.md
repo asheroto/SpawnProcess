@@ -31,7 +31,7 @@ Quick and simple application that spawns a new process without blocking executio
 ## PHP Usage
 
 ### Explanation
-You can use shell_exec (returns output to you) or shell (does not return output) to spawn a new process without it blocking the script. Meaning, once you launch a new process the script will continue running and NOT wait on the result/output of the EXE you run.
+You can use shell_exec (returns output to you) or shell (does not return output) to spawn a new process without it blocking the script. Meaning once you launch a new process the script will continue running and NOT wait on the result/output of the EXE you run. The only output you will receive is the process ID that is spawned.
 
 ### Example
 `echo shell_exec("spawnprocess.exe -path php.exe -args \"phpScript.php\" -windowstyle hidden");`
