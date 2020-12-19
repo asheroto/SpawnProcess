@@ -2,6 +2,9 @@
 
     Sub Main()
         Try
+            'Skip a line
+            Console.WriteLine("")
+
             'Get command line arguments
             Dim s() As String = Environment.GetCommandLineArgs()
 
