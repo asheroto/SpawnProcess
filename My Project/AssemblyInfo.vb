@@ -11,8 +11,8 @@ Imports System.Runtime.InteropServices
 <Assembly: AssemblyTitle("SpawnProcess")>
 <Assembly: AssemblyDescription("")>
 <Assembly: AssemblyCompany("")>
-<Assembly: AssemblyProduct("SpawnProcess")>
-<Assembly: AssemblyCopyright("Copyright ©  2020")>
+<Assembly: AssemblyProduct("")>
+<Assembly: AssemblyCopyright("")>
 <Assembly: AssemblyTrademark("")>
 
 <Assembly: ComVisible(False)>

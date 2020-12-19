@@ -6,7 +6,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{18DE33AB-EF3F-4CA2-BEF4-5A5982D20781}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <StartupObject>SpawnProcess.Module1</StartupObject>
+    <StartupObject>SpawnProcess.Main</StartupObject>
     <RootNamespace>SpawnProcess</RootNamespace>
     <AssemblyName>SpawnProcess</AssemblyName>
     <FileAlignment>512</FileAlignment>
@@ -23,6 +23,7 @@
     <OutputPath>bin\Debug\</OutputPath>
     <DocumentationFile>SpawnProcess.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -71,7 +72,7 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Module1.vb" />
+    <Compile Include="Main.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
