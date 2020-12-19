@@ -1,4 +1,4 @@
-﻿Module Module1
+﻿Module Main
 
     Sub Main()
         Try
@@ -14,6 +14,7 @@
             'If no arguments are specified, print help text
             If s.Length = 1 Then PrintHelpTextAndEnd()
 
+            'Loop through the command line arguments
             For i As Integer = 1 To s.Length - 1
                 Select Case LCase(s(i))
                     Case "-path"
@@ -67,7 +68,7 @@
             End If
             j.Stop()
 
-            'Report process ID
+            'Report process ID and end
             Console.WriteLine("Spawned process: " + p.Id.ToString)
             End
         Catch ex As Exception
