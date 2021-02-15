@@ -1,5 +1,6 @@
 Module Program
 
+    'Main
     Sub Main(args As String())
         Try
             'Skip a line
