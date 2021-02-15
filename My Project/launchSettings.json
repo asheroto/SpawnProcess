@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "SpawnProcess": {
+      "commandName": "Project",
+      "remoteDebugEnabled": false
+    }
+  }
+}
