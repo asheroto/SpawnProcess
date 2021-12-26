@@ -73,16 +73,19 @@
 
             'Report process ID and end
             Console.WriteLine("Spawned process: " + p.Id.ToString)
+            Console.WriteLine()
             End
         Catch ex As Exception
             'On error, print the error message
             Console.WriteLine("Error: " + ex.Message)
+            Console.WriteLine()
         End Try
     End Sub
 
     ' Print help text and then end
     Sub PrintHelpTextAndEnd()
         Console.WriteLine(My.Resources.HelpText)
+        Console.WriteLine()
         End
     End Sub
 End Module

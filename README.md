@@ -1,5 +1,5 @@
 # SpawnProcess
-Quick and simple application that spawns a new process without blocking execution.  A new process is started using shell execute.
+Quick and simple application that spawns a new process without blocking execution. A new process is started using shell execute.
 
 ## Installation
 1. Download the latest EXE from the releases.
