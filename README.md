@@ -1,5 +1,5 @@
 # SpawnProcess
-Quick and simple application that spawns a new process without blocking execution.  A new process is started using shell execute.
+Quick and simple application that spawns a new process without blocking execution. A new process is started using shell execute.
 
 ## Installation
 1. Download the latest EXE from the releases.
@@ -15,7 +15,7 @@ Quick and simple application that spawns a new process without blocking executio
 |Argument|Required/Optional|Description|
 |--|--|--|
 |-path|Required|Path to Process|
-|-args|Optional|Arguments for Process (args must be in double-quotes)|
+|-args|Optional|Arguments for Process|
 |-windowstyle|Optional|Hidden/Normal/Minimized/Maximized|
 |-workingdirectory|Optional|Working Directory of Process|
 
@@ -27,11 +27,3 @@ Quick and simple application that spawns a new process without blocking executio
 
 ### Example #3
 `SpawnProcess.exe -path "C:\Path\To\Process.exe" -args "-data -more" -windowstyle hidden`
-
-## PHP Usage
-
-### Explanation
-You can use shell_exec (returns output to you) or shell (does not return output) to spawn a new process without it blocking the script. Meaning once you launch a new process the script will continue running and NOT wait on the result/output of the EXE you run. The only output you will receive is the process ID that is spawned.
-
-### Example
-`echo shell_exec("spawnprocess.exe -path php.exe -args \"phpScript.php\" -windowstyle hidden");`

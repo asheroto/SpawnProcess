@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "18de33ab-ef3f-4ca2-bef4-5a5982d20781": {
+      "ProjectGuid": "18de33ab-ef3f-4ca2-bef4-5a5982d20781",
+      "DisplayName": "SpawnProcess",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
