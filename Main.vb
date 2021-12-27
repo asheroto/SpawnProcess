@@ -1,4 +1,21 @@
 ﻿Module Main
+    Public Declare Function ShowWindow Lib "user32.dll" (ByVal hWnd As IntPtr, ByVal nCmdShow As Integer) As Boolean
+
+    Public Enum ShowWindowCommand As Integer
+        SW_HIDE = 0             ' Hides the window and activates another window.
+        SW_SHOWNORMAL = 1       ' Activates and displays a window. If the window is minimized or maximized, the system restores it to its original size and position. An application should specify this flag when displaying the window for the first time.
+        SW_SHOWMINIMIZED = 2    ' Activates the window and displays it as a minimized window.
+        SW_MAXIMIZE = 3         ' Maximizes the specified window.
+        SW_SHOWMAXIMIZED = 3    ' Activates the window and displays it as a maximized window.
+        SW_SHOWNOACTIVATE = 4   ' Displays a window in its most recent size and position. This value is similar to SW_SHOWNORMAL, except that the window is not activated.
+        SW_SHOW = 5             ' Activates the window and displays it in its current size and position. 
+        SW_MINIMIZE = 6         ' Minimizes the specified window and activates the next top-level window in the Z order.
+        SW_SHOWMINNOACTIVE = 7  ' Displays the window as a minimized window. This value is similar to SW_SHOWMINIMIZED, except the window is not activated.
+        SW_SHOWNA = 8           ' Displays the window in its current size and position. This value is similar to SW_SHOW, except that the window is not activated.
+        SW_RESTORE = 9          ' Activates and displays the window. If the window is minimized or maximized, the system restores it to its original size and position. An application should specify this flag when restoring a minimized window.
+        SW_SHOWDEFAULT = 10     ' Sets the show state based on the SW_ value specified in the STARTUPINFO structure passed to the CreateProcess function by the program that started the application. 
+        SW_FORCEMINIMIZE = 11   ' Minimizes a window, even if the thread that owns the window is not responding. This flag should only be used when minimizing windows from a different thread.
+    End Enum
 
     Sub Main()
         Try
@@ -70,6 +87,25 @@
                 'Wait
             End If
             j.Stop()
+
+            'If supposed to be minimized, force it to be minimized (console apps don't minimize process, .NET bug)
+            If p.StartInfo.WindowStyle = ProcessWindowStyle.Minimized Then
+                'Waits until mainwindowhandle is created
+                Dim sw As New Stopwatch
+                sw.Start()
+                Do Until p.MainWindowHandle.ToInt32 > 0 Or sw.Elapsed.Seconds > 2
+                    'Nothing
+                Loop
+                sw.Stop()
+
+                'Reset stopwatch, then repeat force window minimized for 1 second to ensure minimized
+                sw.Reset()
+                sw.Start()
+                Do Until sw.Elapsed.Seconds > 1
+                    ShowWindow(p.MainWindowHandle, ShowWindowCommand.SW_FORCEMINIMIZE)
+                Loop
+                sw.Stop()
+            End If
 
             'Report process ID and end
             Console.WriteLine("Spawned process: " + p.Id.ToString)
