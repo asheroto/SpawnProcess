@@ -1,0 +1,11 @@
+C:\Projects\SpawnProcess\bin\Release\SpawnProcess.exe.config
+C:\Projects\SpawnProcess\bin\Release\SpawnProcess.exe
+C:\Projects\SpawnProcess\bin\Release\SpawnProcess.pdb
+C:\Projects\SpawnProcess\bin\Release\SpawnProcess.xml
+C:\Projects\SpawnProcess\obj\Release\SpawnProcess.vbproj.AssemblyReference.cache
+C:\Projects\SpawnProcess\obj\Release\SpawnProcess.Resources.resources
+C:\Projects\SpawnProcess\obj\Release\SpawnProcess.vbproj.GenerateResource.cache
+C:\Projects\SpawnProcess\obj\Release\SpawnProcess.vbproj.CoreCompileInputs.cache
+C:\Projects\SpawnProcess\obj\Release\SpawnProcess.exe
+C:\Projects\SpawnProcess\obj\Release\SpawnProcess.xml
+C:\Projects\SpawnProcess\obj\Release\SpawnProcess.pdb

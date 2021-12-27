@@ -9,7 +9,7 @@ Imports System.Runtime.InteropServices
 ' Review the values of the assembly attributes
 
 <Assembly: AssemblyTitle("SpawnProcess")>
-<Assembly: AssemblyDescription("")>
+<Assembly: AssemblyDescription("Spawn a new process from command line without blocking execution. Made for Windows.")>
 <Assembly: AssemblyCompany("")>
 <Assembly: AssemblyProduct("")>
 <Assembly: AssemblyCopyright("")>
@@ -31,5 +31,5 @@ Imports System.Runtime.InteropServices
 ' by using the '*' as shown below:
 ' <Assembly: AssemblyVersion("1.0.*")>
 
-<Assembly: AssemblyVersion("0.0.4.0")>
-<Assembly: AssemblyFileVersion("0.0.4.0")>
+<Assembly: AssemblyVersion("0.0.5.0")>
+<Assembly: AssemblyFileVersion("0.0.5.0")>
