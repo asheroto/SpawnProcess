@@ -53,8 +53,6 @@ SpawnProcessHidden.exe -path "powershell" -args "-executionpolicy bypass -comman
 
 and then click "OK", and then click "Yes" for the args to move into the "Add arguments" field.
 
-Notice the pair of double quotes before and after the Command argument. A pair of double quotes escapes the args argument double quotes at the beginning and end (so double quotes will work inside a set of another double quotes). 
-
 Another example:
 ```powershell
 SpawnProcessHidden.exe -Path "pwsh" -Args "-Command & 'C:\Projects\ChocolateyPackages\fxsound\update.ps1'" -WorkingDirectory "C:\Projects\ChocolateyPackages\ClickUp-Official"
